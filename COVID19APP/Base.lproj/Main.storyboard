@@ -48,7 +48,7 @@
                                             <action selector="signUpTapped:" destination="tQK-Om-3AK" eventType="touchUpInside" id="uQa-OJ-pcN"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="roh-iG-6ru">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="roh-iG-6ru">
                                         <rect key="frame" x="0.0" y="350" width="334" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -88,7 +88,7 @@
         <!--Home View Controller-->
         <scene sceneID="rYc-pF-HSk">
             <objects>
-                <viewController id="vbb-XG-Glm" customClass="HomeViewController" customModule="COVID19APP" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeVC" id="vbb-XG-Glm" customClass="HomeViewController" customModule="COVID19APP" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jrj-oF-KvX">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -262,7 +262,7 @@
                                             <action selector="loginTapped:" destination="vYe-BI-SXa" eventType="touchUpInside" id="Ewi-lz-LBq"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eVD-60-n3x">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eVD-60-n3x">
                                         <rect key="frame" x="0.0" y="210" width="334" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -285,10 +285,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="sSI-Vm-M2D"/>
                     <connections>
+                        <outlet property="emailTextField" destination="uqf-vC-DBl" id="cCk-fR-L9j"/>
                         <outlet property="errorLabel" destination="eVD-60-n3x" id="nID-Nw-EiE"/>
-                        <outlet property="firstNameTextField" destination="uqf-vC-DBl" id="Vk4-Ok-LEY"/>
-                        <outlet property="lastNameTextField" destination="WLs-LR-pDq" id="A9W-Pc-MW5"/>
                         <outlet property="loginButton" destination="3W3-OW-W4j" id="0LN-Mr-m8S"/>
+                        <outlet property="passwordTextField" destination="WLs-LR-pDq" id="TsT-D7-ZLB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iIa-KG-Cmg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

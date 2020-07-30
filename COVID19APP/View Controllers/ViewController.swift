@@ -7,12 +7,15 @@
 //
 
 import UIKit
+import MapKit
 
 class ViewController: UIViewController {
 
     @IBOutlet weak var signUpButton: UIButton!
     
     @IBOutlet weak var loginButton: UIButton!
+    
+    @IBOutlet private var mapView: MKMapView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
